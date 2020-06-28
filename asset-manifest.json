@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-todo/static/css/main.fc45c6ed.chunk.css",
+    "main.js": "/react-todo/static/js/main.fc4c2140.chunk.js",
+    "main.js.map": "/react-todo/static/js/main.fc4c2140.chunk.js.map",
+    "runtime-main.js": "/react-todo/static/js/runtime-main.40cbbb06.js",
+    "runtime-main.js.map": "/react-todo/static/js/runtime-main.40cbbb06.js.map",
+    "static/js/2.4802328f.chunk.js": "/react-todo/static/js/2.4802328f.chunk.js",
+    "static/js/2.4802328f.chunk.js.map": "/react-todo/static/js/2.4802328f.chunk.js.map",
+    "index.html": "/react-todo/index.html",
+    "precache-manifest.7314865056c9989b957f1806d08b7496.js": "/react-todo/precache-manifest.7314865056c9989b957f1806d08b7496.js",
+    "service-worker.js": "/react-todo/service-worker.js",
+    "static/css/main.fc45c6ed.chunk.css.map": "/react-todo/static/css/main.fc45c6ed.chunk.css.map",
+    "static/js/2.4802328f.chunk.js.LICENSE.txt": "/react-todo/static/js/2.4802328f.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/react-todo/static/media/trash-solid.f9cdec3f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.40cbbb06.js",
+    "static/js/2.4802328f.chunk.js",
+    "static/css/main.fc45c6ed.chunk.css",
+    "static/js/main.fc4c2140.chunk.js"
+  ]
+}
