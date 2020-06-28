@@ -1,29 +1,17 @@
-import React, { useState } from 'react';
-import ListItem from './ListItem';
-import TodoData from '../TodoData';
+import React from 'react';
+import TodoForm from './TodoForm';
+import TodoList from './TodoList';
+import { TodoDataContextProvider } from '../Context/TodoDataContext';
 
 function App() {
-    const [todo, setTodo] = useState(TodoData);
-    function handleChange(id) {
-        setTodo(
-            todo.map((property) => {
-                if (property.id === id) {
-                    return {
-                        ...property,
-                        completed: !property.completed,
-                    };
-                }
-                return property;
-            })
-        );
-    }
-
     return (
-        <ul className="list">
-            {todo.map((task) => (
-                <ListItem key={task.id} task={task} handleChange={handleChange} />
-            ))}
-        </ul>
+        <TodoDataContextProvider>
+            <div className="app-container">
+                <h1>React To-do List</h1>
+                <TodoForm />
+                <TodoList />
+            </div>
+        </TodoDataContextProvider>
     );
 }
 
