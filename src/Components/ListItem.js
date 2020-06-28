@@ -10,7 +10,7 @@ const ListItem = ({ task, handleChange }) => {
         <li className={task.completed ? 'list-item is-completed' : 'list-item'}>
             <input type="checkbox" name="item" id={task.id} checked={task.completed} onChange={() => handleChange(task.id)} />
             <label htmlFor={task.id}>{task.task}</label>
-            <span onClick={handleClick}>Delete</span>
+            <span onClick={handleClick}></span>
         </li>
     );
 };

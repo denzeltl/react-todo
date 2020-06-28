@@ -18,11 +18,17 @@ function TodoList() {
         );
     }
     return (
-        <ul className="list">
-            {tasks.map((task) => (
-                <ListItem key={task.id} task={task} handleChange={handleChange} />
-            ))}
-        </ul>
+        <div>
+            {tasks.length ? (
+                <ul className="list">
+                    {tasks.map((task) => (
+                        <ListItem key={task.id} task={task} handleChange={handleChange} />
+                    ))}
+                </ul>
+            ) : (
+                <p className="no-tasks">No Tasks</p>
+            )}
+        </div>
     );
 }
 

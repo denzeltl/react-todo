@@ -14,8 +14,8 @@ function TodoForm() {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" value={text} onChange={handleChange} />
+        <form className="form" onSubmit={handleSubmit}>
+            <input placeholder="Add new task here..." type="text" value={text} onChange={handleChange} />
             <button type="submit">Add Task</button>
         </form>
     );

@@ -4,23 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 export const TodoDataContext = createContext();
 
 export const TodoDataContextProvider = ({ children }) => {
-    const [tasks, setTasks] = useState([
-        {
-            id: 1,
-            task: 'Clean dishes',
-            completed: false,
-        },
-        {
-            id: 2,
-            task: 'Wash face',
-            completed: true,
-        },
-        {
-            id: 3,
-            task: 'Take trash',
-            completed: false,
-        },
-    ]);
+    const [tasks, setTasks] = useState([]);
     function addTask(text) {
         if (text) {
             setTasks([...tasks, { id: uuidv4(), task: text, completed: false }]);
