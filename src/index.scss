@@ -194,3 +194,13 @@ body {
         padding: 2rem 3rem;
     }
 }
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 11px;
+    }
+
+    .list {
+        font-size: 1.2rem;
+    }
+}
